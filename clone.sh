@@ -19,7 +19,7 @@ cd $CODE/E3SM/OLMT; git remote add upstream git@github.com:ricciutodm/OLMT.git
 # Early career project
 #======================
 git clone --recursive -b rfiorella/eamxx/wiso git@github.com:rfiorella/E3SM $CODE/E3SM/EAMXX-wiso
-git clone --recursive -b rfiorella/eamv2/wiso git@github.com:rfiorella/E3SM $CODE/E3SM/EAMv2-wiso
+git clone --recursive -b rfiorella/eam/wiso git@github.com:rfiorella/E3SM $CODE/E3SM/EAMv2-wiso
 # add E3SM project upstreams
 cd $CODE/E3SM/EAMXX-wiso; git remote add upstream git@github.com:E3SM-Project/E3SM.git
 cd $CODE/E3SM/EAMv2-wiso; git remote add upstream git@github.com:E3SM-Project/E3SM.git
@@ -67,22 +67,22 @@ git clone git@github.com:rfiorella/tropical-d18O-scales $CODE/attenuation-isotop
 #============
 # Tutorials:
 #============
-git clone git@github.com:xarray-contrib/xarray-tutorial $CODE/tutorials/
-git clone git@github.com:wlandau/targets-tutorial $CODE/tutorials/
-git clone git@github.com:kokkos/kokkos-tutorials $CODE/tutorials/
-git clone git@github.com:amanzi/ats-demos $CODE/tutorials/
+git clone git@github.com:xarray-contrib/xarray-tutorial $CODE/tutorials/xarray-tutorial
+git clone git@github.com:wlandau/targets-tutorial $CODE/tutorials/targets-tutorial
+git clone git@github.com:kokkos/kokkos-tutorials $CODE/tutorials/kokkos-tutorial
+git clone git@github.com:amanzi/ats-demos $CODE/tutorials/ats-demos
 
 # Some conda-forge things I'm working on:
-git clone git@github.com:rfiorella/subversion-feedstock $CODE/
-git clone git@github.com:rfiorella/serf-feedstock $CODE/
+git clone git@github.com:rfiorella/subversion-feedstock $CODE/subversion-feedstock
+git clone git@github.com:rfiorella/serf-feedstock $CODE/serf-feedstock
 
 #=============================================
 # add some things to the packages directory:
 #============================================
 PACK=/packages
 
-git clone git@github.com:amanzi/amanzi $PACK/src/
-git clone git@github.com:amanzi/ats_manager $PACK/src/
+git clone git@github.com:amanzi/amanzi $PACK/src/amanzi-master
+git clone git@github.com:amanzi/ats_manager $PACK/src/ats_manager
 git clone -b amanzi-1.5 git@github.com:amanzi/amanzi $PACK/src/amanzi-1.5 # last release
 
 

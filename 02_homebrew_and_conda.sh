@@ -13,11 +13,6 @@ echo "Setting up your Mac..."
 hostarch=$(uname -m)
 hostname=$(uname -n)
 
-# Check for Oh My Zsh and install if we don't have it
-if test ! $(which omz); then
-  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
-fi
-
 # Check for Homebrew and install if we don't have it
 if [ -z  "$(which brew)" ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -58,6 +53,9 @@ if [ -z "$(which conda)" ]; then
   # apply initialization script:
   ~/miniconda3/bin/conda init zsh
 fi
+
+# now test conda:
+conda install --yes numpy scipy h5py matplotlib
 
 # Clone Github repositories
 ./clone.sh
