@@ -11,6 +11,7 @@ cask 'docker'
 cask 'zoom'
 cask 'firefox'
 cask 'google-chrome'
+cask 'google-earth-pro'
 
 # Quicklook
 cask 'qlmarkdown'
