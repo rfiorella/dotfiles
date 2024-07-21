@@ -16,6 +16,8 @@ while [ `brew list | wc -l` -ne 0 ]; do
     done
 done
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+# remove brew from .zprofile:
+sed -i '' '/brew/d' ~/.zprofile
 
 # remove oh-my-zsh:
 sh ~/.oh-my-zsh/tools/uninstall.sh
