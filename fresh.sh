@@ -17,7 +17,7 @@ if test ! $(which omz); then
 fi
 
 # Check for Homebrew and install if we don't have it
-if test ! $(which brew); then
+if [ -z  "$(which brew)" ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   # this needs some logic to change based on where brew is actually being installed:
   if [ `uname -m` == "arm64" ]; then
@@ -38,10 +38,18 @@ brew update
 
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
+# check to see if on work computer, and install extras if we are not:
 brew bundle --file ./Brewfile
 
+hostname=$(uname -n)
+if [ "${hostname#pn}" != "$hostname" ]; then
+  brew bundle --file ./Caskfile_home
+else
+  brew bundle --file ./Caskfile_work
+fi
+
 # Install miniconda:
-if test ! $(which conda); then
+if [ -z "$(which conda)" ]; then
    mkdir -p ~/miniconda3
   /bin/bash -c "$(curl -fsSL https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-`uname -m`.sh -o ~/miniconda3/miniconda.sh)"
   /bin/bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3

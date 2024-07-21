@@ -4,13 +4,14 @@
 tap 'homebrew/bundle'
 
 # Generic 
-brew 'awscli'
+# brew 'awscli'
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
 brew 'grep'
 brew 'svn' # Needed to install fonts
 brew 'subversion'
+brew 'stow'
 brew 'htop'
 brew 'wget'
 brew 'zsh-completion'
@@ -21,6 +22,7 @@ brew 'make'
 brew 'gcc'
 brew 'openmpi'
 brew 'modules'
+brew 'r'
 
 # netcdf tools:
 brew 'cdo'
@@ -32,18 +34,20 @@ brew 'nco'
 brew 'ncview'
 
 # Apps
-# cask 'docker'
-#cask 'visual-studio-code'
 cask 'iterm2'
 cask 'obsidian'
 cask 'visit'
 cask 'mactex'
 cask 'paraview'
-
+cask 'panoply'
+cask 'rstudio'
 
 # Quicklook
 cask 'qlmarkdown'
 cask 'quicklook-json'
+cask 'qlstephen'
+cask 'qlcolorcode'
+cask 'ipynb-quicklook'
 
 # Fonts
 cask 'font-lato'
