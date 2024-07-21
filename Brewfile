@@ -1,10 +1,7 @@
 # Taps
-#tap 'homebrew/cask-fonts'
-#tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
 # Generic 
-# brew 'awscli'
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
@@ -14,7 +11,9 @@ brew 'subversion'
 brew 'stow'
 brew 'htop'
 brew 'wget'
-brew 'zsh-completion'
+brew 'zsh-completions'
+brew 'htop'
+brew 'pandoc'
 
 # Development
 brew 'cmake'
@@ -23,6 +22,8 @@ brew 'gcc'
 brew 'openmpi'
 brew 'modules'
 brew 'r'
+brew 'act'
+brew 'dive'
 
 # netcdf tools:
 brew 'cdo'
@@ -32,29 +33,5 @@ brew 'netcdf'
 brew 'netcdf-fortran'
 brew 'nco'
 brew 'ncview'
-
-# Apps
-cask 'iterm2'
-cask 'obsidian'
-cask 'visit'
-cask 'mactex'
-cask 'paraview'
-cask 'panoply'
-cask 'rstudio'
-
-# Quicklook
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'qlstephen'
-cask 'qlcolorcode'
-cask 'ipynb-quicklook'
-
-# Fonts
-cask 'font-lato'
-cask 'font-open-sans'
-cask 'font-roboto'
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
-
+brew 'perl'
+brew 'gdal'
