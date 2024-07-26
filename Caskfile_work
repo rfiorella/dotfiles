@@ -7,7 +7,8 @@ cask 'visit', args: {appdir:"~/Applications"}
 cask 'paraview', args: {appdir:"~/Applications"}
 cask 'panoply', args: {appdir:"~/Applications"}
 cask 'rstudio', args: {appdir:"~/Applications"}
-cask 'docker', args: {appdir:"~/Applications"}
+#cask 'docker', args: {appdir:"~/Applications"}
+cask 'grandperspective', args: {appdir:"~/Applications"}
 # many of the other programs
 # that are left as casks in home
 # version are provided as managed

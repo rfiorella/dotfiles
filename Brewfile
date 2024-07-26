@@ -1,7 +1,7 @@
 # Taps
 tap 'homebrew/bundle'
 
-# Generic 
+# Generic
 brew 'bash' # Latest Bash version
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
@@ -9,6 +9,7 @@ brew 'grep'
 brew 'svn' # Needed to install fonts
 brew 'subversion'
 brew 'stow'
+brew 'tree'
 brew 'htop'
 brew 'wget'
 brew 'zsh-completions'
@@ -28,7 +29,7 @@ brew 'dive'
 # netcdf tools:
 brew 'cdo'
 brew 'eccodes'
-brew 'hdf5' 
+brew 'hdf5'
 brew 'netcdf'
 brew 'netcdf-fortran'
 brew 'nco'

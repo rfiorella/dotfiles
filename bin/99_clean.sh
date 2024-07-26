@@ -4,10 +4,10 @@
 # by fresh.
 
 # first, remove miniconda:
-rm -rf ~/.miniconda3
-echo "Miniconda removed, *but*:"
-echo "you need to remove environment variables from"
-echo ".zshrc or .zprofile"
+#rm -rf ~/.miniconda3
+#echo "Miniconda removed, *but*:"
+#echo "you need to remove environment variables from"
+#echo ".zshrc or .zprofile"
 
 # second remove brew and casks:
 while [ `brew list | wc -l` -ne 0 ]; do
@@ -15,10 +15,10 @@ while [ `brew list | wc -l` -ne 0 ]; do
         brew uninstall --force --ignore-dependencies $EACH
     done
 done
-NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+#NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 # remove brew from .zprofile:
-sed -i '' '/brew/d' ~/.zprofile
+#sed -i '' '/brew/d' ~/.zprofile
 
 # remove oh-my-zsh:
-sh ~/.oh-my-zsh/tools/uninstall.sh
+#sh ~/.oh-my-zsh/tools/uninstall.sh
 
