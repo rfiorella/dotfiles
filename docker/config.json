@@ -1,0 +1,29 @@
+{
+	"auths": {
+		"gitlab.lanl.gov": {},
+		"https://index.docker.io/v1/": {}
+	},
+	"credsStore": "desktop",
+	"proxies": {
+		"default": {
+			"httpProxy": "http://proxyout.lanl.gov:8080",
+			"httpsProxy": "http://proxyout.lanl.gov:8080",
+			"noProxy": "gitlab.lanl.gov:5050"
+		}
+	},
+	"currentContext": "desktop-linux",
+	"plugins": {
+		"-x-cli-hints": {
+			"enabled": "true"
+		},
+		"debug": {
+			"hooks": "exec"
+		},
+		"scout": {
+			"hooks": "pull,buildx build"
+		}
+	},
+	"features": {
+		"hooks": "true"
+	}
+}

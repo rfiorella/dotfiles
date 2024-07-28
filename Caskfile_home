@@ -1,0 +1,32 @@
+# Apps
+cask 'iterm2'
+cask 'obsidian'
+cask 'visit'
+cask 'mactex', args: {appdir:"~/Applications"}
+cask 'paraview'
+cask 'panoply'
+cask 'rstudio'
+cask 'visual-studio-code'
+cask 'docker' 
+cask 'zoom'
+cask 'firefox'
+cask 'google-chrome'
+cask 'google-earth-pro'
+
+# Quicklook
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'qlstephen'
+cask 'qlcolorcode'
+cask 'ipynb-quicklook'
+
+# Fonts
+cask 'font-lato'
+cask 'font-open-sans'
+cask 'font-roboto'
+cask 'font-source-code-pro-for-powerline'
+cask 'font-source-code-pro'
+cask 'font-source-sans-3'
+cask 'font-source-serif-4'
+cask 'font-hack'
+cask 'font-oxygen-mono'
